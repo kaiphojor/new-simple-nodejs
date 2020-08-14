@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
                 req.socket.remoteAddress ||
             (req.connection.socket ? req.connection.socket.remoteAddress : null);
     console.log(ip);
-    res.send('Hello, New World! : ' + ip + "," + new Date());
+    res.send('Hello,Whole New World! : ' + ip + "," + new Date());
 });
 
 app.get('/health', (req, res) => {
